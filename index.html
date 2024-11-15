@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Circle and Parabola Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Circle and Parabola Solver</h1>
+
+        <div class="input-section">
+            <h2>Circle Properties:</h2>
+            <input type="text" id="centerInput" placeholder="Center(h, k) e.g., 3, -2">
+            <input type="text" id="radiusInput" placeholder="Radius r (optional)">
+            <input type="text" id="pointOnCircleInput" placeholder="Point on Circle (x, y) e.g., 6, -2">
+            <input type="text" id="tangentLineInput" placeholder="Tangent Line Equation e.g., y = mx + b">
+            <input type="text" id="centerLineInput" placeholder="Line Where Center Sits e.g., y = mx + b">
+            <button onclick="solveCircle()">Solve Circle</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Parabola Properties:</h2>
+            <input type="text" id="parabolaCoefficientsInput" placeholder="Coefficients (a, b, c) e.g., 2, 3, 1">
+            <input type="text" id="focusInput" placeholder="Focus (x, y) (optional)">
+            <input type="text" id="vertexInput" placeholder="Vertex (x, y) (optional)">
+            <button onclick="solveParabola()">Solve Parabola</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Results:</h2>
+            <p id="result"></p>
+            <h2>Explanation:</h2>
+            <p id="explanation"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
